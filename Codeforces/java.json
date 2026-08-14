@@ -1,0 +1,815 @@
+{
+    "Scanner": {
+        "prefix": "sc",
+        "body": [
+            "Scanner sc = new Scanner(System.in);"
+        ],
+        "description": ""
+    },
+    "Fast IO Imports": {
+        "prefix": "imp",
+        "body": [
+            "import java.util.*;",
+            "import java.io.*;"
+        ],
+        "description": ""
+    },
+    "Read Int": {
+        "prefix": "ri",
+        "body": [
+            "int ${1:n} = sc.nextInt();"
+        ],
+        "description": ""
+    },
+    "Read Long": {
+        "prefix": "rl",
+        "body": [
+            "long ${1:x} = sc.nextLong();"
+        ],
+        "description": ""
+    },
+    "Read Double": {
+        "prefix": "rd",
+        "body": [
+            "double ${1:x} = sc.nextDouble();"
+        ],
+        "description": ""
+    },
+    "Read String": {
+        "prefix": "rs",
+        "body": [
+            "String ${1:s} = sc.next();"
+        ],
+        "description": ""
+    },
+    "Read Line": {
+        "prefix": "rline",
+        "body": [
+            "String ${1:s} = sc.nextLine();"
+        ],
+        "description": ""
+    },
+    "Read Char": {
+        "prefix": "rc",
+        "body": [
+            "char ${1:c} = sc.next().charAt(0);"
+        ],
+        "description": ""
+    },
+    "Read Char Array": {
+        "prefix": "rca",
+        "body": [
+            "char[] ${1:ch} = sc.next().toCharArray();"
+        ],
+        "description": ""
+    },
+    "Test Cases": {
+        "prefix": "tc",
+        "body": [
+            "int t = sc.nextInt();",
+            "while(t-->0){",
+            "    $0",
+            "}"
+        ],
+        "description": ""
+    },
+    "For": {
+        "prefix": "fori",
+        "body": [
+            "for(int i=0;i<${1:n};i++){",
+            "    $0",
+            "}"
+        ],
+        "description": ""
+    },
+    "Reverse For": {
+        "prefix": "rfor",
+        "body": [
+            "for(int i=${1:n}-1;i>=0;i--){",
+            "    $0",
+            "}"
+        ],
+        "description": ""
+    },
+    "Enhanced For": {
+        "prefix": "foreach",
+        "body": [
+            "for(${1:int} ${2:x} : ${3:arr}){",
+            "    $0",
+            "}"
+        ],
+        "description": ""
+    },
+    "While": {
+        "prefix": "wh",
+        "body": [
+            "while(${1:true}){",
+            "    $0",
+            "}"
+        ],
+        "description": ""
+    },
+    "If": {
+        "prefix": "if",
+        "body": [
+            "if(${1:condition}){",
+            "    $0",
+            "}"
+        ],
+        "description": ""
+    },
+    "Else If": {
+        "prefix": "elif",
+        "body": [
+            "else if(${1:condition}){",
+            "    $0",
+            "}"
+        ],
+        "description": ""
+    },
+    "Else": {
+        "prefix": "else",
+        "body": [
+            "else{",
+            "    $0",
+            "}"
+        ],
+        "description": ""
+    },
+    "Print": {
+        "prefix": "sout",
+        "body": [
+            "System.out.println(${1});"
+        ],
+        "description": ""
+    },
+    "YES": {
+        "prefix": "yes",
+        "body": [
+            "System.out.println(\"YES\");"
+        ],
+        "description": ""
+    },
+    "NO": {
+        "prefix": "no",
+        "body": [
+            "System.out.println(\"NO\");"
+        ],
+        "description": ""
+    },
+    "Read int Array": {
+        "prefix": "ria",
+        "body": [
+            "int[] arr = new int[${1:n}];",
+            "for(int i=0;i<${1:n};i++){",
+            "    arr[i]=sc.nextInt();",
+            "}"
+        ],
+        "description": ""
+    },
+    "Read int Matrix": {
+        "prefix": "rim",
+        "body": [
+            "int n=sc.nextInt();",
+            "int m=sc.nextInt();",
+            "int[][] mat=new int[n][m];",
+            "for(int i=0;i<n;i++){",
+            "  for(int j=0;j<m;j++){",
+            "    mat[i][j]=sc.nextInt();",
+            "  }",
+            "}"
+        ],
+        "description": ""
+    },
+    "Read long Array": {
+        "prefix": "rla",
+        "body": [
+            "long[] arr = new long[${1:n}];",
+            "for(int i=0;i<${1:n};i++){",
+            "    arr[i]=sc.nextLong();",
+            "}"
+        ],
+        "description": ""
+    },
+    "Read long Matrix": {
+        "prefix": "rlm",
+        "body": [
+            "int n=sc.nextInt();",
+            "int m=sc.nextInt();",
+            "long[][] mat=new long[n][m];",
+            "for(int i=0;i<n;i++){",
+            "  for(int j=0;j<m;j++){",
+            "    mat[i][j]=sc.nextLong();",
+            "  }",
+            "}"
+        ],
+        "description": ""
+    },
+    "Read double Array": {
+        "prefix": "rda",
+        "body": [
+            "double[] arr = new double[${1:n}];",
+            "for(int i=0;i<${1:n};i++){",
+            "    arr[i]=sc.nextDouble();",
+            "}"
+        ],
+        "description": ""
+    },
+    "Read double Matrix": {
+        "prefix": "rdm",
+        "body": [
+            "int n=sc.nextInt();",
+            "int m=sc.nextInt();",
+            "double[][] mat=new double[n][m];",
+            "for(int i=0;i<n;i++){",
+            "  for(int j=0;j<m;j++){",
+            "    mat[i][j]=sc.nextDouble();",
+            "  }",
+            "}"
+        ],
+        "description": ""
+    },
+    "swap": {
+        "prefix": "swap",
+        "body": [
+            "int temp=arr[i];",
+            "arr[i]=arr[j];",
+            "arr[j]=temp;"
+        ],
+        "description": ""
+    },
+    "sort": {
+        "prefix": "sort",
+        "body": [
+            "Arrays.sort(arr);"
+        ],
+        "description": ""
+    },
+    "fill": {
+        "prefix": "fill",
+        "body": [
+            "Arrays.fill(arr, ${1:0});"
+        ],
+        "description": ""
+    },
+    "max": {
+        "prefix": "amax",
+        "body": [
+            "int max=Arrays.stream(arr).max().getAsInt();"
+        ],
+        "description": ""
+    },
+    "min": {
+        "prefix": "amin",
+        "body": [
+            "int min=Arrays.stream(arr).min().getAsInt();"
+        ],
+        "description": ""
+    },
+    "sum": {
+        "prefix": "sum",
+        "body": [
+            "int sum=0;",
+            "for(int x:arr) sum+=x;"
+        ],
+        "description": ""
+    },
+    "prefix": {
+        "prefix": "prefix",
+        "body": [
+            "int[] pre=new int[n+1];",
+            "for(int i=0;i<n;i++) pre[i+1]=pre[i]+arr[i];"
+        ],
+        "description": ""
+    },
+    "sb": {
+        "prefix": "sb",
+        "body": [
+            "StringBuilder sb=new StringBuilder();"
+        ],
+        "description": ""
+    },
+    "hm": {
+        "prefix": "hm",
+        "body": [
+            "HashMap<Integer,Integer> map=new HashMap<>();"
+        ],
+        "description": ""
+    },
+    "hs": {
+        "prefix": "hs",
+        "body": [
+            "HashSet<Integer> set=new HashSet<>();"
+        ],
+        "description": ""
+    },
+    "tm": {
+        "prefix": "tm",
+        "body": [
+            "TreeMap<Integer,Integer> map=new TreeMap<>();"
+        ],
+        "description": ""
+    },
+    "ts": {
+        "prefix": "ts",
+        "body": [
+            "TreeSet<Integer> set=new TreeSet<>();"
+        ],
+        "description": ""
+    },
+    "pq": {
+        "prefix": "pq",
+        "body": [
+            "PriorityQueue<Integer> pq=new PriorityQueue<>();"
+        ],
+        "description": ""
+    },
+    "maxpq": {
+        "prefix": "maxpq",
+        "body": [
+            "PriorityQueue<Integer> pq=new PriorityQueue<>(Collections.reverseOrder());"
+        ],
+        "description": ""
+    },
+    "dq": {
+        "prefix": "dq",
+        "body": [
+            "Deque<Integer> dq=new ArrayDeque<>();"
+        ],
+        "description": ""
+    },
+    "stk": {
+        "prefix": "stk",
+        "body": [
+            "Stack<Integer> st=new Stack<>();"
+        ],
+        "description": ""
+    },
+    "al": {
+        "prefix": "al",
+        "body": [
+            "ArrayList<Integer> list=new ArrayList<>();"
+        ],
+        "description": ""
+    },
+    "ll": {
+        "prefix": "ll",
+        "body": [
+            "LinkedList<Integer> list=new LinkedList<>();"
+        ],
+        "description": ""
+    },
+    "mid": {
+        "prefix": "mid",
+        "body": [
+            "int mid=low+(high-low)/2;"
+        ],
+        "description": ""
+    },
+    "bs": {
+        "prefix": "bs",
+        "body": [
+            "while(low<=high){",
+            "    int mid=low+(high-low)/2;",
+            "    $0",
+            "}"
+        ],
+        "description": ""
+    },
+    "dir4": {
+        "prefix": "dir4",
+        "body": [
+            "int[] dx={-1,1,0,0};",
+            "int[] dy={0,0,-1,1};"
+        ],
+        "description": ""
+    },
+    "dir8": {
+        "prefix": "dir8",
+        "body": [
+            "int[] dx={-1,-1,-1,0,0,1,1,1};",
+            "int[] dy={-1,0,1,-1,1,-1,0,1};"
+        ],
+        "description": ""
+    },
+    "pair": {
+        "prefix": "pair",
+        "body": [
+            "static class Pair{",
+            "int first,second;",
+            "Pair(int first,int second){this.first=first;this.second=second;}",
+            "}"
+        ],
+        "description": ""
+    },
+    "gcd": {
+        "prefix": "gcd",
+        "body": [
+            "static long gcd(long a,long b){",
+            "while(b!=0){long t=b;b=a%b;a=t;}",
+            "return a;",
+            "}"
+        ],
+        "description": ""
+    },
+    "lcm": {
+        "prefix": "lcm",
+        "body": [
+            "static long lcm(long a,long b){",
+            "return a/gcd(a,b)*b;",
+            "}"
+        ],
+        "description": ""
+    },
+    "dbg": {
+        "prefix": "dbg",
+        "body": [
+            "System.out.println(Arrays.toString(arr));"
+        ],
+        "description": ""
+    },
+    "dbg2": {
+        "prefix": "dbg2",
+        "body": [
+            "System.out.println(Arrays.deepToString(mat));"
+        ],
+        "description": ""
+    },
+    "main": {
+        "prefix": "main",
+        "body": [
+            "public static void main(String[] args){",
+            "    $0",
+            "}"
+        ],
+        "description": ""
+    },
+    "Utility 1": {
+        "prefix": "u1",
+        "body": [
+            "// Utility snippet 1",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 2": {
+        "prefix": "u2",
+        "body": [
+            "// Utility snippet 2",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 3": {
+        "prefix": "u3",
+        "body": [
+            "// Utility snippet 3",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 4": {
+        "prefix": "u4",
+        "body": [
+            "// Utility snippet 4",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 5": {
+        "prefix": "u5",
+        "body": [
+            "// Utility snippet 5",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 6": {
+        "prefix": "u6",
+        "body": [
+            "// Utility snippet 6",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 7": {
+        "prefix": "u7",
+        "body": [
+            "// Utility snippet 7",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 8": {
+        "prefix": "u8",
+        "body": [
+            "// Utility snippet 8",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 9": {
+        "prefix": "u9",
+        "body": [
+            "// Utility snippet 9",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 10": {
+        "prefix": "u10",
+        "body": [
+            "// Utility snippet 10",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 11": {
+        "prefix": "u11",
+        "body": [
+            "// Utility snippet 11",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 12": {
+        "prefix": "u12",
+        "body": [
+            "// Utility snippet 12",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 13": {
+        "prefix": "u13",
+        "body": [
+            "// Utility snippet 13",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 14": {
+        "prefix": "u14",
+        "body": [
+            "// Utility snippet 14",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 15": {
+        "prefix": "u15",
+        "body": [
+            "// Utility snippet 15",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 16": {
+        "prefix": "u16",
+        "body": [
+            "// Utility snippet 16",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 17": {
+        "prefix": "u17",
+        "body": [
+            "// Utility snippet 17",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 18": {
+        "prefix": "u18",
+        "body": [
+            "// Utility snippet 18",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 19": {
+        "prefix": "u19",
+        "body": [
+            "// Utility snippet 19",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 20": {
+        "prefix": "u20",
+        "body": [
+            "// Utility snippet 20",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 21": {
+        "prefix": "u21",
+        "body": [
+            "// Utility snippet 21",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 22": {
+        "prefix": "u22",
+        "body": [
+            "// Utility snippet 22",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 23": {
+        "prefix": "u23",
+        "body": [
+            "// Utility snippet 23",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 24": {
+        "prefix": "u24",
+        "body": [
+            "// Utility snippet 24",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 25": {
+        "prefix": "u25",
+        "body": [
+            "// Utility snippet 25",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 26": {
+        "prefix": "u26",
+        "body": [
+            "// Utility snippet 26",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 27": {
+        "prefix": "u27",
+        "body": [
+            "// Utility snippet 27",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 28": {
+        "prefix": "u28",
+        "body": [
+            "// Utility snippet 28",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 29": {
+        "prefix": "u29",
+        "body": [
+            "// Utility snippet 29",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 30": {
+        "prefix": "u30",
+        "body": [
+            "// Utility snippet 30",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 31": {
+        "prefix": "u31",
+        "body": [
+            "// Utility snippet 31",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 32": {
+        "prefix": "u32",
+        "body": [
+            "// Utility snippet 32",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 33": {
+        "prefix": "u33",
+        "body": [
+            "// Utility snippet 33",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 34": {
+        "prefix": "u34",
+        "body": [
+            "// Utility snippet 34",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 35": {
+        "prefix": "u35",
+        "body": [
+            "// Utility snippet 35",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 36": {
+        "prefix": "u36",
+        "body": [
+            "// Utility snippet 36",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 37": {
+        "prefix": "u37",
+        "body": [
+            "// Utility snippet 37",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 38": {
+        "prefix": "u38",
+        "body": [
+            "// Utility snippet 38",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 39": {
+        "prefix": "u39",
+        "body": [
+            "// Utility snippet 39",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 40": {
+        "prefix": "u40",
+        "body": [
+            "// Utility snippet 40",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 41": {
+        "prefix": "u41",
+        "body": [
+            "// Utility snippet 41",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 42": {
+        "prefix": "u42",
+        "body": [
+            "// Utility snippet 42",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 43": {
+        "prefix": "u43",
+        "body": [
+            "// Utility snippet 43",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 44": {
+        "prefix": "u44",
+        "body": [
+            "// Utility snippet 44",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 45": {
+        "prefix": "u45",
+        "body": [
+            "// Utility snippet 45",
+            "$0"
+        ],
+        "description": ""
+    },
+    "Utility 46": {
+        "prefix": "u46",
+        "body": [
+            "// Utility snippet 46",
+            "$0"
+        ],
+        "description": ""
+    }
+}>java
